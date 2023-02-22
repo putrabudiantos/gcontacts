@@ -1,0 +1,58 @@
+ListView(
+          children: [
+            //tambah kontak kontainer
+            Container(
+              color: Colors.grey,
+              height: 50,
+              width: MediaQuery.of(context).size.width,
+              child: Padding(
+                padding: const EdgeInsets.only(
+                    left: 10, right: 5, top: 5, bottom: 5),
+                child: Container(
+                  width: 50,
+                  height: 20,
+                  color: Colors.blue,
+                  child: TextButton.icon(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.person_add_alt_1,
+                      color: Colors.amber,
+                    ),
+                    label: const Text(
+                      'Tambah Kontak Baru',
+                      style: TextStyle(color: Colors.amber),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            //data kontak
+          ],
+        ),
+
+
+        //   onPressed: () {},
+                        //   child: Row(
+                        //     mainAxisAlignment: MainAxisAlignment.start,
+                        //     crossAxisAlignment: CrossAxisAlignment.center,
+                        //     children: const [
+                        //       Icon(
+                        //         Icons.account_balance_outlined,
+                        //         size: 13,
+                        //       ),
+                        //       SizedBox(width: 5),
+                        //       Text(
+                        //         'example@email.com',
+                        //         textAlign: TextAlign.center,
+                        //         style: TextStyle(
+                        //           color: Colors.black87,
+                        //           fontSize: 11,
+                        //         ),
+                        //       ),
+                        //       Icon(
+                        //         Icons.keyboard_arrow_down,
+                        //         color: Colors.black87,
+                        //         size: 18,
+                        //       )
+                        //     ],
+                        //   ),

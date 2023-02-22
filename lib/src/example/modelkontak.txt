@@ -1,0 +1,68 @@
+Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+            padding: const EdgeInsets.only(left: 10),
+            child: const Text('Kemarin')),
+        const SizedBox(height: 10),
+        Container(
+          padding: const EdgeInsets.only(left: 10, right: 10),
+          height: 50,
+          width: MediaQuery.of(context).size.width,
+          decoration: const BoxDecoration(
+            color: Colors.grey,
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              CircleAvatar(
+                backgroundColor: Colors.pink.shade300,
+                child: const Text(
+                  'B',
+                  style: TextStyle(color: Colors.white, fontSize: 24),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Bjorka',
+                      style: TextStyle(color: Colors.black, fontSize: 20),
+                    ),
+                    const SizedBox(height: 3),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: const [
+                        Icon(
+                          Icons.call_made,
+                          size: 17,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text('Mobile'),
+                        SizedBox(width: 5),
+                        Icon(Icons.dangerous_outlined, size: 13),
+                        SizedBox(width: 5),
+                        Text('Rabu')
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                child: IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.call_outlined),
+                ),
+              )
+            ],
+          ),
+        ),
+      ],
+    );
